@@ -10,11 +10,13 @@ This is the card detection system from [HoloBinder](https://www.holobinder.com),
 $ npm run scan -- castform.png
 Claude read:
   ポワルン たいようのすがた · set SV7a · no. 006/064 · ja
-  The bottom edge clearly reads regulation mark H, set code sv7a and number 006/064 with a C
-  rarity mark. The card is the Japanese Castform Sunny Form, a Fire type with 70 HP. (confidence 0.97)
+  The bottom edge clearly reads regulation mark H, set code sv7a and number
+  006/064 with a C rarity mark. The card is the Japanese Castform Sunny Form,
+  a Fire type with 70 HP. (confidence 0.97)
 
 Best matches:
-  1.00  ポワルン たいようのすがた (SV7a-006)  ← set code, card number, name, HP, type, rarity
+  1.00  ポワルン たいようのすがた (SV7a-006)
+        ← set code, card number, name, HP, type, rarity
 ```
 
 ## How it works

@@ -34,6 +34,7 @@ if (matches.length === 0) {
 } else {
   console.log("Best matches:")
   for (const { card, score, reasons } of matches) {
-    console.log(`  ${score.toFixed(2)}  ${card.name} (${card.id})  ← ${reasons.join(", ")}`)
+    console.log(`  ${score.toFixed(2)}  ${card.name} (${card.id})`)
+    console.log(`        ← ${reasons.join(", ")}`)
   }
 }
