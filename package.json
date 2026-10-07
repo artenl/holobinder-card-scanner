@@ -1,0 +1,32 @@
+{
+  "name": "holobinder-card-scanner",
+  "version": "1.0.0",
+  "description": "Identify Pokémon TCG cards from a photo with Claude vision and fuzzy catalogue matching.",
+  "author": "Artha Enlart",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "scan": "tsx examples/scan.ts",
+    "build:sets": "tsx scripts/build-set-index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
